@@ -1,2 +1,2 @@
 # Homzmart-cohort30
-#I Created the Steel Cloth Hanger SECTION of the project
+#I Created the STEEL CLOTH HANGER section of the project
