@@ -1,2 +1,4 @@
 # Homzmart-cohort30
-#I Created the STEEL CLOTH HANGER section of the project
+# This is a part of an e-commerce website (Hozmart.com)
+# This is the Hnager and steel section of the Website
+# This section of the E-coomerce website was created by me
