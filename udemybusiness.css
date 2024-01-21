@@ -1,0 +1,417 @@
+*{
+
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: auto; */
+  }
+  .container{
+    display: flex;
+    /* background: rgb(29, 29, 218); */
+    height: 50px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    position: static;
+    border-bottom: 2px solid gray;
+    font-size: 18px;
+    /* padding-right: 10px;
+    padding-bottom: 20px; */
+padding: 30px 70px;
+
+  
+  }
+  .container a{
+    color: black;
+  }
+  .logo{
+    padding-left: 10px;
+
+  }
+
+  .btn-singup{
+    background-color: black;
+  color: white;
+  padding: 10px 8px;
+  }
+  .btn-singup:hover{
+  background-color: rgb(126, 0, 245);
+    border-radius: 5px;
+    color: black;}
+    .container ul li{
+      display: inline-block;
+      padding-left: 10px;
+      
+    }
+    /* .lang{
+      padding-left: 20px;
+    } */
+    /* .nav .nav1{
+      padding-left: 2px;
+    } */
+    .btn-singup{
+margin-left: 20px;
+    }
+    .login .btn-singup{
+color: white;
+    }
+    .container2{
+      display: flex;
+      justify-content: space-around;
+      /* align-items: center; */
+      /* position: static; */
+    margin: 50px 200px;
+    /* padding-left: 50px;
+     */
+    }
+    .get-demo a{
+
+      padding-bottom: 50px;
+      margin-bottom: 50px;
+    }
+    .get-demo h1{
+
+      font-size: 50px;
+      padding-bottom: 40px;
+    }
+    .get-demo h4{
+
+      font-size: 30px;
+      padding-bottom: 40px;
+      color: gray;
+    }
+    .get-demo1 h4{
+
+      font-size: 30px;
+      padding-bottom: 40px;
+      color: black;
+    }
+    .get-demo1 p{
+
+      font-size: 20px;
+      padding-bottom: 40px;
+      color: black;
+    }
+  
+    .get-demo1 .bi-check2{
+      color: green;
+  
+    }
+    .organization{
+      width: 300px;
+    }
+
+    .submit{
+      color: black;
+    }
+
+    .get-demo1 h5{
+font-size: 40px;
+    }
+    .img{
+      display: flex;
+      width: 5px;
+    }
+    .trust{
+      padding-left: 50px;
+      padding-right: 100px;
+    }
+    .footer-section{
+      display: flex;
+      width: 2%;
+      /* margin-right: 40px; */
+      padding-left: 80px;
+      height: 2%;
+      
+    }
+    .footer-section a{
+      display: flex;
+      width: 150%;
+    
+      
+    }
+.footer-section img{
+  width: 150px;
+}
+
+  .mf3 img{
+
+    width: 60px;
+    color: white;
+  }
+
+  .main-footer{
+    display: flex;
+    background-color: black;
+    padding-left: 50px;
+    justify-content: space-around;
+    color: white;
+    height: 500px;
+    padding-right: 100px;
+    /* padding-left: 100px;
+     */
+  }
+  .div{
+
+  justify-content: space-between;
+  }
+  .footer-logo{
+    background-color: black;
+  }
+  .mf3 p{
+    color: white;
+    margin-top: 30px;
+  }
+  .mf1{
+    margin-top: 30px;
+  }
+  .mf2{
+    margin-top: 20px;
+    /* padding-top: 100px; */
+    
+    
+  }
+  .mf3{
+    padding-left: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .main-footer a{
+   
+    color: white;
+    padding-left: 10px;
+    /* margin-left: 50px; */
+    /* margin-right: 50px; */
+   
+  }
+  .footer-logo{
+    padding-left: 200px;
+  }
+  
+  .form a{
+
+    width: 50px;
+  }
+  /* .div input{
+
+    width: 300px;
+    margin-right: 20px;
+    padding: 20px;
+  } */
+.form input{
+  width: 300px;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+
+  /* mobile responsiveness starts here */
+
+@media screen and (max-width:1033px)
+{
+  .nav ul li a{
+
+   padding:0 3px ;
+  }
+
+}
+
+@media (min-width:200px) and (max-width: 725px)
+/* container responsiveness starts here */
+{
+
+
+  .container{
+    display: flex;
+    /* background: rgb(29, 29, 218); */
+    height: 50px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    position: static;
+    border-bottom: 2px solid gray;
+    font-size: 6px;
+    /* padding-right: 10px;
+    padding-bottom: 20px; */
+padding: 10px 30px;
+
+  
+  }
+  .container a{
+    color: black;
+  }
+  .logo{
+    padding-left: 2px;
+
+  }
+
+  .btn-singup{
+    background-color: black;
+  color: white;
+  padding: 5px 3px;
+  }
+  .btn-singup:hover{
+  background-color: rgb(126, 0, 245);
+    border-radius: 5px;
+    color: black;}
+    .container ul li{
+      display: inline-block;
+      padding-left: 5px;
+      
+    }
+    /* .lang{
+      padding-left: 20px;
+    } */
+    /* .nav .nav1{
+      padding-left: 2px;
+    } */
+    .btn-singup{
+margin-left: 5px;
+font-size: 10px;
+    }
+    .login .btn-singup{
+color: white;
+    }
+    .container2{
+      display: flex;
+      justify-content: space-around;
+      /* align-items: center; */
+      /* position: static; */
+    margin: 50px 200px;
+    /* padding-left: 50px;
+     */
+    }
+    .get-demo a{
+
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+    .get-demo h1{
+
+      font-size: 20px;
+      padding-bottom: 15px;
+    }
+    .get-demo h4{
+
+      font-size: 15px;
+      padding-bottom: 20px;
+      color: gray;
+    }
+    .get-demo1 h4{
+
+      font-size: 15px;
+      padding-bottom: 20px;
+      color: black;
+    }
+    .get-demo1 p{
+
+      font-size: 20px;
+      padding-bottom: 30px;
+      color: black;
+    }
+  
+    .get-demo1 .bi-check2{
+      color: green;
+  
+    }
+    .organization{
+      width: 150px;
+    }
+
+    .submit{
+      color: black;
+    }
+
+    .get-demo1 h5{
+font-size: 10px;
+    }
+    .img{
+      display: flex;
+      width: 2px;
+    }
+    .trust{
+      padding-left: 50px;
+      padding-right: 100px;
+    }
+    .footer-section{
+      display: flex;
+      width: 1%;
+      /* margin-right: 40px; */
+      padding-left: 30px;
+      height: 2%;
+      
+    }
+    .footer-section a{
+      display: flex;
+      width: 20%;
+    
+      
+    }
+.footer-section img{
+  width: 20px;
+}
+
+  .mf3 img{
+
+    width: 30px;
+    color: white;
+  }
+
+  .main-footer{
+    display: flex;
+    background-color: black;
+    padding-left: 20px;
+    justify-content: space-around;
+    color: white;
+    height: 500px;
+    padding-right: 100px;
+    /* padding-left: 100px;
+     */
+  }
+  .footer-logo{
+    background-color: black;
+  }
+  .mf3 p{
+    color: white;
+    margin-top: 20px;
+  }
+  .mf1{
+    margin-top: 15px;
+  }
+  .mf2{
+    margin-top: 10px;
+    /* padding-top: 100px; */
+    
+    
+  }
+  .mf3{
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .main-footer a{
+   
+    color: white;
+    padding-left: 10px;
+    /* margin-left: 50px; */
+    /* margin-right: 50px; */
+   
+  }
+  .footer-logo{
+    padding-left: 200px;
+  }
+  
+  .form a{
+
+    width: 50px;
+  }
+
+
+
+
+}
