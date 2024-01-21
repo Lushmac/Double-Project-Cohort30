@@ -1,0 +1,174 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    
+}
+/* Image slide design starts here */
+
+.carousel-slide{
+  transform:translateX(0px);
+  transition: all 0ms ease 0s;
+  width: 100%;
+
+}
+
+.mirror1{
+
+    width: 500px;
+    height: 600px;
+    padding-top: 20px;
+}
+
+.mirror2{
+
+    width: 500px;
+    height: 500px;
+}
+
+/* image design ends here */
+
+
+/* Item details design starts */
+.demand{
+  background-color: rgb(220, 248, 220);
+  width: 30%;
+  text-align: center;
+  border-radius: 10px;
+  padding: 2px;
+  color: green;
+  margin-top: -10px;
+}
+
+.productPrice_specialPrices,.productPrice_OriginalPrices{
+  display: flex;
+
+}
+
+/* price design */
+.smallPrice{
+  position: relative;
+  top: 15px;
+}
+
+.productPrice_discountPercent{
+  position: relative;
+  top: 10px;
+  border-radius: 10px;
+  
+  
+}
+.percent{
+  background-color: rgb(95, 229, 160);
+  
+}
+.realPrice{
+  text-decoration: line-through;
+  position: relative;
+  top: 5px;
+  margin-top: -15px;
+}
+
+.price{
+  text-decoration: line-through;
+  padding-left: 5px;
+  font-size: 20px;
+  margin-top: -15px;
+}
+
+/* Cart Section */
+.increase{
+  width: 20%;
+  border-radius:5px;
+  border-style: solid 1px;
+  padding: 5px;
+  
+}
+.CARTincrease{
+  width: 65%;
+  border-radius:5px;
+  border-style: solid 0px;
+  background-color: rgb(1, 1, 84);
+  color: white;
+  padding: 5px;
+}
+.CartHEART{
+  width: 8%;
+  border-radius:5px;
+  border-style: solid 1px;
+  padding: 5px;
+}
+
+/* smallSELLERmoreITEMS */
+.more-items-fromSeller{
+  text-decoration: none;
+ color: black;
+}
+/* rating Color */
+.checked {
+    color: orange;
+  }
+
+  /* customer review section */
+ .review{
+  gap: 10%;
+ }
+
+ .specList li:nth-child(odd){
+  background-color:rgb(241, 239, 239);
+  
+ }
+
+
+ /* Item details design ends */
+
+
+
+  /* Customer Rating section */
+
+
+  /* related product design */
+  
+  /* card-1 */
+  .six-reviewsP,.One-reviewP{
+    position: relative;
+    top: -6px;
+    padding-left: 5px;
+  }
+  .relatedPriceCurr{
+    position: relative;
+    top: -9px;
+    padding-left: 5px;
+  }
+  
+  ul li{
+    list-style:disc;
+    
+  }
+  /* Three column layout */
+  .side {
+    /* float: left; */
+    position: relative;
+    left: -15px;
+    top: 16px;
+    /* width: 15%; */
+    /* margin-top: 5px; */
+  }
+
+  .side-right{
+
+    /* float: left; */
+    position: relative;
+    left: 295px;
+    top: -22px;
+    /* width: 15%; */
+    /* margin-top: 5px; */
+
+  }
+  .progress-bar{
+    background-color: rgb(1, 1, 84);
+  }
+
+
+  
+ 
