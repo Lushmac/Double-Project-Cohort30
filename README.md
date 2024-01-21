@@ -1,4 +1,5 @@
-# Homzmart-cohort30
-# i worked on the mirror section
-# html and css files were created
-# there is also the image folder where all the images are stored
+
+# I used bootstrap 5, html and css to create this project
+#  The Wall lamp html was created using all above.
+# I modified my README.md toreflect what i have done
+
