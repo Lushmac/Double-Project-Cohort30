@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wall lamp</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/lamp.css">
+  </head>
+<body>
+<div class="container box-sizing border-box mt-4">
+ <div class="row">
+  <div class="col-3 d-none d-lg-block d-none d-lg-block">
+        <div class="sidebar">
+         <div class="flex-container d-flex column-gap-5">
+            <div class="left flex-container d-flex">
+                <i class="bi bi-filter"></i><h5>Filter</h5>
+            </div>
+
+            <div class="btn btn-outline-warning">
+              <div class="all">
+               <button class="reset outline-warning">Reset</button>
+               <button class="apply bg-warning">Apply</button>
+              </div>
+             </div> 
+         </div>
+        </div>
+        
+        <!-- collapsible side section starts here -->
+        <div class="collapse_header">
+          <div class="collapsible-content-container">
+             <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+             <span class="ms-1 d-none d-sm-inline" >Sort by</span></a>   
+             <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#row">
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="featured">
+                  <label class="form-check-label" for="firstCheckbox">  Featured</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="Pricelowtohigh">
+                  <label class="form-check-label" for="secondCheckbox">  Price low to high</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="Pricehightolow">
+                  <label class="form-check-label" for="thirdCheckbox">  Price high to low</label>
+                </li>
+              </ul>  
+          </div>
+        </div>
+
+        <div class="collapse_header">
+          <div class="collapsible-content-container">
+            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+             <span class="ms-1 d-none d-sm-inline" >Price</span></a>   
+             <div data-role="page">
+              
+            
+              
+            </div>
+           
+          </div>
+        </div>
+
+
+          
+       
+
+        <div class="collapse_header">
+          <div class="collapsible-content-container">
+            <a href="#submenu4" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+             <span class="ms-1 d-none d-sm-inline" >Colour</span></a>   
+             <ul class="collapse nav flex-column ms-1" id="submenu4" data-bs-parent="#row">
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="black">
+                  <label class="form-check-label" for="firstCheckbox"><i class="bi bi-circle-fill"></i>  Black</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="gold">
+                  <label class="form-check-label" for="secondCheckbox"><i class="bi bi-circle-fill text-warning-emphasis"></i>  Gold</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="multicolour">
+                  <label class="form-check-label" for="thirdCheckbox"><i class="bi bi-circle-fill text-secondary-emphasis"></i>  Multi colour</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="White">
+                  <label class="form-check-label" for="fourthCheckbox"><i class="bi bi-circle-fill text-white"></i>  White</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="silver">
+                  <label class="form-check-label" for="fifthCheckbox"><i class="bi bi-circle-fill text-secondary"></i>  Silver</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="bronze">
+                  <label class="form-check-label" for="sixthCheckbox"><i class="bi bi-circle-fill text-dander-emphasis"></i>  Bronze</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="green">
+                  <label class="form-check-label" for="seventhCheckbox"><i class="bi bi-circle-fill text-success"></i>  Green</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="yellow">
+                  <label class="form-check-label" for="eightCheckbox"><i class="bi bi-circle-fill text-warning"></i>  Yellow</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="blue">
+                  <label class="form-check-label" for="ninthCheckbox"><i class="bi bi-circle-fill text-primary"></i>  Blue</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="pink">
+                  <label class="form-check-label" for="tenthCheckbox"><i class="bi bi-circle-fill text-warning-subtle"></i>  Pink</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="brown">
+                  <label class="form-check-label" for="eleventhCheckbox"><i class="bi bi-circle-fill text-danger-emphasis"></i>  Brown</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="transparent">
+                  <label class="form-check-label" for="twelvthCheckbox"><i class="bi bi-circle-fill text-transparent"></i>  Transparent</label>
+                </li>
+              </ul>
+
+             
+          </div>
+        </div>
+
+        <div class="colapse_header">
+          <div class="colapsible-content-container">
+            <a href="#submenu5" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+              <span class="ms-1 d-none d-sm-inline" >Category</span></a>   
+              <ul class="collapse nav flex-column ms-1" id="submenu5" data-bs-parent="#row">
+              <ul class="lamp-list-group m-0 p-0">
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="walllamps">
+                  <label class="form-check-label" for="firstCheckbox">Wall lamps</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="outdoorlighting">
+                  <label class="form-check-label" for="secondCheckbox">Outdoor Lighting</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="ceilinglamps">
+                  <label class="form-check-label" for="thirdCheckbox">Ceiling lamps</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="bulbss">
+                  <label class="form-check-label" for="fourthCheckbox">Bulbs</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="tablelamps">
+                  <label class="form-check-label" for="fifthCheckbox">Table Lamps</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="kidslighting">
+                  <label class="form-check-label" for="sixthCheckbox">kids lighting</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="spots">
+                  <label class="form-check-label" for="seventhCheckbox">Spots</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="boholighting">
+                  <label class="form-check-label" for="eightCheckbox">Boho Lighting</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="floorlamps">
+                  <label class="form-check-label" for="ninthCheckbox">Floor lamps</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="ledlight">
+                  <label class="form-check-label" for="tenthCheckbox">Led Light</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="walldecor">
+                  <label class="form-check-label" for="eleventhCheckbox">Wall Decor</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="chandeliers">
+                  <label class="form-check-label" for="twelvthCheckbox">Chandeliers</label>
+                </li>
+              </ul>
+             
+             
+          </div>
+        </div>
+
+        <div class="colapse_header">
+          <div class="colapsible-content-container">
+       
+            <a href="btn" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+              <span class="ms-1 d-none d-sm-inline" >Fulfilled by HZ</span></a>
+              
+              <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+              <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+              </div>
+                
+              
+          </div>
+        </div>
+
+
+  </div>
+
+
+<!-- card section starts here -->
+        <div class="col-9">
+           
+            <div> <h1>Wall lamps</h1></div>
+            
+           
+           <div class="row">
+             <div  class="col-md-3 col-sm-6">
+                <div class="card">
+                    <!-- <div class="card-block"> -->
+                      <img width="185px" src="https://eg-rv.homzmart.net/catalog/product/5/7/5789_copy_.jpg" class="card-img-top" alt="">
+                       <div class="card-title fs-3 text ">
+                         <h6>YL0074 Wall Lamp</h6> 
+                         <h6>Gold&off white-5789</h6>
+                       </div>
+                       <div class="card-text auto fit content fs-6 text"> <p><i class="bi bi-star-fill text-warning"></i>4.35  (56 Review)</p></div>              
+                          <p>EGP<b class="bold fs-4">599.</b>00 </p>
+                          <div class="details d-flex justify-content-between ">
+                            <div class="deco">
+                                <p class="relate text-decoration-line-through">EGP6,500</p>                  
+                              </div>
+                            <div class="discount">
+                              <button type="button" class="btn btn-sm btn-success">50% OFF</button></p>
+                            </div>
+                          </div>
+                            <button type="button" class="btn text-success" class="fs-6">Upon Demand</button>
+                    <!-- </div> -->
+                </div>
+             </div>
+
+          
+             <div class="col-md-3 col-sm-6 mt-0">
+                <div class="card">
+                    <!-- <div class="card-block"> -->
+                      <img width="185px"src="https://eg-rv.homzmart.net/catalog/product/l/1/l1_6.jpg" class="card-img-top" alt="">
+                       <div class="card-title fs-6">
+                         <h6>Wall Lamp 18x19cm</h6> 
+                         <h6 class="fs-6">LIG.S.LS06-2004</h6>
+                       </div>
+                       <div class="card-text auto fit content"> <p><i class="bi bi-star-fill text-warning"></i>4.25  (37 Review)</p></div>              
+                          <p>EGP<b class="bold fs-4">599.</b>00 </p>
+                          <div class="details d-flex justify-content-between ">
+                            <div class="deco">
+                                <p class="relate text-decoration-line-through">EGP6,400</p>                  
+                              </div>
+                            <div class="discount">
+                              <button type="button" class="btn btn-sm btn-success">32% OFF</button></p>
+                            </div>
+                          </div>
+                            <button type="button" class="btn text-success">Upon Demand</button>
+                    <!-- </div> -->
+                </div>
+             </div>
+
+             <div class="col-md-3 col-sm-6">
+                <div class="card">
+                    <!-- <div class="card-block"> -->
+                      <img width="185px" src="https://eg-rv.homzmart.net/catalog/product/e/d/edg.c_290.jpg" class="card-img-top" alt="">
+                       <div class="card-title">
+                         <h6>YL0074 Wall Lamp</h6> 
+                         <h6>Gold&off white-5789</h6>
+                       </div>
+                       <div class="card-text auto fit content"> <p><i class="bi bi-star-fill text-warning"></i>4.35  (56 Review)</p></div>              
+                          <p>EGP<b class="bold fs-4">599.</b>00 </p>
+                          <div class="details d-flex justify-content-between ">
+                            <div class="deco">
+                                <p class="relate text-decoration-line-through">EGP6,500</p>                  
+                              </div>
+                            <div class="discount">
+                              <button type="button" class="btn btn-sm btn-success">19% OFF</button></p>
+                            </div>
+                          </div>
+                            <button type="button" class="btn text-success">Upon Demand</button>
+                    <!-- </div> -->
+                </div>
+             </div>
+
+             <div class="col-md-3 col-sm-6">
+                <div class="card">
+                    <!-- <div class="card-block"> -->
+                      <img width="185px" src="https://eg-rv.homzmart.net/catalog/product/m/o/moon_1_copy_.jpg"class="card-img-top" alt="">
+                       <div class="card-title">
+                         <h6>YL0074 Wall Lamp</h6> 
+                         <h6>Gold&off white-5789</h6>
+                       </div>
+                       <div class="card-text auto fit content"> <p><i class="bi bi-star-fill text-warning"></i>4.35  (56 Review)</p></div>              
+                          <p>EGP<b class="bold fs-4">599.</b>00 </p>
+                          <div class="details d-flex justify-content-between ">
+                            <div class="deco">
+                                <p class="relate text-decoration-line-through">EGP6,500</p>                  
+                              </div>
+                            <div class="discount">
+                              <button type="button" class="btn btn-sm btn-success">31% OFF</button></p>
+                            </div>
+                          </div>
+                            <button type="button" class="btn text-success">Upon Demand</button>
+                    <!-- </div> -->
+                </div>
+             </div>
+
+          </div>
+
+         <!-- second row stars here -->
+          <div class="row mt-3">
+            <div  class="col-md-3 col-sm-6">
+               <div class="card">
+                   <!-- <div class="card-block"> -->
+                     <img width="185px" src="https://eg-rv.homzmart.net/catalog/product/n/k/nkbl01-recoveredl_copy_.jpg" class="card-img-top"alt="">
+                      <div class="card-title fs-3 text">
+                        <h6>HOLLGH-31 Wall Lamp</h6> 
+                        <h6>Black & White</h6>
+                      </div>
+                      <div class="card-text auto fit content fs-6 text"> <p><i class="bi bi-star-fill text-warning"></i>5  (1 Review)</p></div>              
+                         <p>EGP<b class="bold fs-4">599.</b>00 </p>
+                         <div class="details d-flex justify-content-between ">
+                          <div class="deco">
+                              <p class="relate text-decoration-line-through">EGP6,620</p>                  
+                            </div>
+                          <div class="discount">
+                            <button type="button" class="btn btn-sm btn-success">52% OFF</button></p>
+                          </div>
+                        </div>
+                           <button type="button" class="btn text-success" class="fs-6">Upon Demand</button>
+                   <!-- </div> -->
+               </div>
+            </div>
+
+         
+            <div class="col-md-3 col-sm-6 mt-0">
+               <div class="card">
+                   <!-- <div class="card-block"> -->
+                     <img width="185px"src="https://eg-rv.homzmart.net/catalog/product/1/3/13_copy__77.jpg" class="card-img-top"alt="">
+                      <div class="card-title fs-6">
+                        <h6>Wall Lamp-Black</h6> 
+                        <h6 class="fs-6">LIG.S.LS06-2004</h6>
+                      </div>
+                      <div class="card-text auto fit content"> <p><i class="bi bi-star-fill text-warning"></i>3.25  (3 Review)</p></div>              
+                         <p>EGP<b class="bold fs-4">599.</b>00 </p>
+                         <div class="details d-flex justify-content-between ">
+                          <div class="deco">
+                              <p class="relate text-decoration-line-through">EGP6,300</p>                  
+                            </div>
+                          <div class="discount">
+                            <button type="button" class="btn btn-sm btn-success">32% OFF</button></p>
+                          </div>
+                        </div>
+                           <button type="button" class="btn text-success">Upon Demand</button>
+                   <!-- </div> -->
+               </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+               <div class="card">
+                   <!-- <div class="card-block"> -->
+                     <img width="185px" src="https://eg-rv.homzmart.net/catalog/product/a/2/a23_resized_thumbnail_1.jpg" class="card-img-top"alt="">
+                      <div class="card-title">
+                        <h6>JK>A23 Wall Lamp-Gold</h6> 
+                        <h6>Gold</h6>
+                      </div>
+                      <div class="card-text auto fit content"> <p><i class="bi bi-star-fill text-warning"></i>4.8  (2 Review)</p></div>              
+                         <p>EGP<b class="bold fs-4">599.</b>00 </p>
+                         <div class="details d-flex justify-content-between ">
+                          <div class="deco">
+                              <p class="relate text-decoration-line-through">EGP6,1200</p>                  
+                            </div>
+                          <div class="discount">
+                            <button type="button" class="btn btn-sm btn-success">17% OFF</button></p>
+                          </div>
+                        </div>
+                           <button type="button" class="btn text-success">Upon Demand</button>
+                   <!-- </div> -->
+               </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+               <div class="card">
+                   <!-- <div class="card-block"> -->
+                     <img width="185px" src="https://eg-rv.homzmart.net/catalog/product/r/l/rl-ud-a-047_copy_.jpg" class="card-img-top"alt="">
+                      <div class="card-title">
+                        <h6>Wall Lighting-Plastic</h6> 
+                        <h6>Black</h6>
+                      </div>
+                      <div class="card-text auto fit content"> <p><i class="bi bi-star-fill text-warning"></i>4.35  (56 Review)</p></div>              
+                         <p>EGP<b class="bold fs-4">599.</b>00 </p>
+                         <div class="details d-flex justify-content-between ">
+                          <div class="deco">
+                              <p class="relate text-decoration-line-through">EGP6,320</p>                  
+                            </div>
+                          <div class="discount">
+                            <button type="button" class="btn btn-sm btn-success">21% OFF</button></p>
+                          </div>
+                        </div>
+                           <button type="button" class="btn text-success">Upon Demand</button>
+                   <!-- </div> -->
+               </div>
+            </div>
+
+         </div>
+
+         <!-- third row starts here -->
+         <div class="row mt-3">
+          <div  class="col-md-3 col-sm-6">
+             <div class="card">
+                 <!-- <div class="card-block"> -->
+                   <img width="185px" src="https://eg-rv.homzmart.net/catalog/product/e/l/eli.c177-env.jpg" class="card-img-top"alt="">
+                    <div class="card-title fs-3 text">
+                      <h6>YL0074 Wall Lamp</h6> 
+                      <h6>Gold&off white-5789</h6>
+                    </div>
+                    <div class="card-text auto fit content fs-6 text"> <p><i class="bi bi-star-fill text-warning"></i>4.35  (56 Review)</p></div>              
+                       <p>EGP<b class="bold fs-4">599.</b>00 </p>
+                       <div class="details d-flex justify-content-between ">
+                        <div class="deco">
+                            <p class="relate text-decoration-line-through">EGP6,500</p>                  
+                          </div>
+                        <div class="discount">
+                          <button type="button" class="btn btn-sm btn-success">20% OFF</button></p>
+                        </div>
+                      </div>
+                         <button type="button" class="btn text-success" class="fs-6">Upon Demand</button>
+                 <!-- </div> -->
+             </div>
+          </div>
+
+       
+          <div class="col-md-3 col-sm-6 mt-0">
+             <div class="card">
+                 <!-- <div class="card-block"> -->
+                   <img width="185px"src="https://eg-rv.homzmart.net/catalog/product/e/d/edg.c_281.jpg" class="card-img-top"alt="">
+                    <div class="card-title fs-6">
+                      <h6>Wall Lamp 18x19cm</h6> 
+                      <h6 class="fs-6">LIG.S.LS06-2004</h6>
+                    </div>
+                    <div class="card-text auto fit content"> <p><i class="bi bi-star-fill text-warning"></i>4.25  (37 Review)</p></div>              
+                       <p>EGP<b class="bold fs-4">599.</b>00 </p>
+                       <div class="details d-flex justify-content-between ">
+                        <div class="deco">
+                            <p class="relate text-decoration-line-through">EGP6,500</p>                  
+                          </div>
+                        <div class="discount">
+                          <button type="button" class="btn btn-sm btn-success">35% OFF</button></p>
+                        </div>
+                      </div>
+                         <button type="button" class="btn text-success">Upon Demand</button>
+                 <!-- </div> -->
+             </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+             <div class="card">
+                 <!-- <div class="card-block"> -->
+                   <img width="185px" src="https://eg-rv.homzmart.net/catalog/product/5/8/5809_copy__1.jpg" class="card-img-top" alt="">
+                    <div class="card-title">
+                      <h6>YL0074 Wall Lamp</h6> 
+                      <h6>Gold&off white-5789</h6>
+                    </div>
+                    <div class="card-text auto fit content"> <p><i class="bi bi-star-fill text-warning"></i>4.35  (56 Review)</p></div>              
+                       <p>EGP<b class="bold fs-4">599.</b>00 </p>
+                       <div class="details d-flex justify-content-between ">
+                        <div class="deco">
+                            <p class="relate text-decoration-line-through">EGP6,500</p>                  
+                          </div>
+                        <div class="discount">
+                          <button type="button" class="btn btn-sm btn-success">18% OFF</button></p>
+                        </div>
+                      </div>
+                         <button type="button" class="btn text-success">Upon Demand</button>
+                 <!-- </div> -->
+             </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+             <div class="card">
+                 <!-- <div class="card-block"> -->
+                   <img width="185px" src="https://eg-rv.homzmart.net/catalog/product/s/l/sl-1023_thumbnail_.jpg" class="card-img-top"alt="">
+                    <div class="card-title">
+                      <h6>YL0074 Wall Lamp</h6> 
+                      <h6>Gold&off white-5789</h6>
+                    </div>
+                    <div class="card-text auto fit content"> <p><i class="bi bi-star-fill text-warning"></i>4.35  (56 Review)</p></div>              
+                       <p>EGP<b class="bold fs-4">327.</b>00 </p>
+                       <div class="details d-flex justify-content-between ">
+                        <div class="deco">
+                            <p class="relate text-decoration-line-through">EGP6,500</p>                  
+                          </div>
+                        <div class="discount">
+                          <button type="button" class="btn btn-sm btn-success">28% OFF</button></p>
+                        </div>
+                      </div>
+                         <button type="button" class="btn text-success">Upon Demand</button>
+                 <!-- </div> -->
+             </div>
+          </div>
+
+       </div>
+
+       <!-- last row section -->
+       <div class="row mt-3">
+        <div  class="col-md-3 col-sm-6">
+           <div class="card">
+               <!-- <div class="card-block"> -->
+                 <img width="185px" src="https://eg-rv.homzmart.net/catalog/product/r/l/rluda052-env_copy_.jpg" class="card-img-top"alt="">
+                  <div class="card-title fs-3 text">
+                    <h6>YL0074 Wall Lamp</h6> 
+                    <h6>Gold&off white-5789</h6>
+                  </div>
+                  <div class="card-text auto fit content fs-6 text"> <p><i class="bi bi-star-fill text-warning"></i>4.35  (56 Review)</p></div>              
+                     <p>EGP<b class="bold fs-4">599.</b>00 </p>
+                     <div class="details d-flex justify-content-between ">
+                      <div class="deco">
+                          <p class="relate text-decoration-line-through">EGP6,500</p>                  
+                        </div>
+                      <div class="discount">
+                        <button type="button" class="btn btn-sm btn-success">19% OFF</button></p>
+                      </div>
+                    </div>
+                       <button type="button" class="btn text-success" class="fs-6">Upon Demand</button>
+               <!-- </div> -->
+           </div>
+        </div>
+
+     
+        <div class="col-md-3 col-sm-6 mt-0">
+           <div class="card">
+               <!-- <div class="card-block"> -->
+                 <img width="185px"src="https://eg-rv.homzmart.net/catalog/product/d/5/d55_1.jpg"class="card-img-top" alt="">
+                  <div class="card-title fs-6">
+                    <h6>Wall Lamp 18x19cm</h6> 
+                    <h6 class="fs-6">LIG.S.LS06-2004</h6>
+                  </div>
+                  <div class="card-text auto fit content"> <p><i class="bi bi-star-fill text-warning"></i>4.25  (37 Review)</p></div>              
+                     <p>EGP<b class="bold fs-4">275.</b>00 </p>
+                     <div class="details d-flex justify-content-between ">
+                      <div class="deco">
+                          <p class="relate text-decoration-line-through">EGP6,500</p>                  
+                        </div>
+                      <div class="discount">
+                        <button type="button" class="btn btn-sm btn-success">14% OFF</button></p>
+                      </div>
+                    </div>
+                       <button type="button" class="btn text-success">Upon Demand</button>
+               <!-- </div> -->
+           </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+           <div class="card">
+               <!-- <div class="card-block"> -->
+                 <img width="185px" src="https://eg-rv.homzmart.net/catalog/product/e/p/ep-1041-masa-b_2_copy_.jpg" class="card-img-top"alt="">
+                  <div class="card-title">
+                    <h6>YL0074 Wall Lamp</h6> 
+                    <h6>Gold&off white-5789</h6>
+                  </div>
+                  <div class="card-text auto fit content"> <p><i class="bi bi-star-fill text-warning"></i>4.35  (56 Review)</p></div>              
+                     <p>EGP<b class="bold fs-4">599.</b>00 </p>
+                     <div class="details d-flex justify-content-between ">
+                      <div class="deco">
+                          <p class="relate text-decoration-line-through">EGP6,500</p>                  
+                        </div>
+                      <div class="discount">
+                        <button type="button" class="btn btn-sm btn-success">20% OFF</button></p>
+                      </div>
+                    </div>
+                       <button type="button" class="btn text-success">Upon Demand</button>
+               <!-- </div> -->
+           </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+           <div class="card">
+               <!-- <div class="card-block"> -->
+                 <img width="185px" src="https://eg-rv.homzmart.net/catalog/product/y/l/yl515_resized_thumbnail.jpg"class="card-img-top" alt="">
+                  <div class="card-title">
+                    <h6>YL0074 Wall Lamp</h6> 
+                    <h6>Gold&off white-5789</h6>
+                  </div>
+                  <div class="card-text auto fit content"> <p><i class="bi bi-star-fill text-warning"></i>4.35  (56 Review)</p></div>              
+                     <p>EGP<b class="bold fs-4">599.</b>00 </p>
+                     <div class="details d-flex justify-content-between ">
+                      <div class="deco">
+                          <p class="relate text-decoration-line-through">EGP6,500</p>                  
+                        </div>
+                      <div class="discount">
+                        <button type="button" class="btn btn-sm btn-success">24% OFF</button></p>
+                      </div>
+                    </div>
+                       <button type="button" class="btn text-success">Upon Demand</button>
+               <!-- </div> -->
+           </div>
+        </div>
+
+     </div>
+
+     <div class="row mt-3">
+      <div  class="col-md-3 col-sm-6">
+         <div class="card">
+             <!-- <div class="card-block"> -->
+               <img width="185px" src="https://eg-rv.homzmart.net/catalog/product/e/p/ep-1055-santos-b_env_2__1.jpg" class="card-img-top"alt="">
+                <div class="card-title fs-3 text">
+                  <h6>YL0074 Wall Lamp</h6> 
+                  <h6>Gold&off white-5789</h6>
+                </div>
+                <div class="card-text auto fit content fs-6 text"> <p><i class="bi bi-star-fill text-warning"></i>4.35  (56 Review)</p></div>              
+                   <p>EGP<b class="bold fs-4">539.</b>00 </p>
+                   <div class="details d-flex justify-content-between ">
+                    <div class="deco">
+                        <p class="relate text-decoration-line-through">EGP6,500</p>                  
+                      </div>
+                    <div class="discount">
+                      <button type="button" class="btn btn-sm btn-success">51% OFF</button></p>
+                    </div>
+                  </div>
+                     <button type="button" class="btn text-success">Upon Demand</button>
+             <!-- </div> -->
+         </div>
+      </div>
+
+   
+      <div class="col-md-3 col-sm-6 mt-0">
+         <div class="card">
+             <!-- <div class="card-block"> -->
+               <img width="185px"src="https://eg-rv.homzmart.net/catalog/product/1/_/1_thumb_2.jpg" class="card-img-top"alt="">
+                <div class="card-title fs-6">
+                  <h6>Wall Lamp 18x19cm</h6> 
+                  <h6 class="fs-6">LIG.S.LS06-2004</h6>
+                </div>
+                <div class="card-text auto fit content"> <p><i class="bi bi-star-fill text-warning"></i>4.25  (37 Review)</p></div>              
+                   <p>EGP<b class="bold fs-4">275.</b>00 </p>
+                   <div class="details d-flex justify-content-between ">
+                    <div class="deco">
+                        <p class="relate text-decoration-line-through">EGP6,400</p>                  
+                      </div>
+                    <div class="discount">
+                      <button type="button" class="btn btn-sm btn-success">22% OFF</button></p>
+                    </div>
+                  </div>
+                     <button type="button" class="btn text-success">Upon Demand</button>
+             <!-- </div> -->
+         </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+         <div class="card">
+             <!-- <div class="card-block"> -->
+               <img width="185px" src="https://eg-rv.homzmart.net/catalog/product/r/l/rl-rs-017_copy__1.jpg"class="card-img-top" alt="">
+                <div class="card-title">
+                  <h6>YL0074 Wall Lamp</h6> 
+                  <h6>Gold&off white-5789</h6>
+                </div>
+                <div class="card-text auto fit content"> <p><i class="bi bi-star-fill text-warning"></i>4.35  (56 Review)</p></div>              
+                   <p>EGP<b class="bold fs-4">529.</b>00 </p>
+                   <div class="details d-flex justify-content-between ">
+                    <div class="deco">
+                        <p class="relate text-decoration-line-through">EGP6,500</p>                  
+                      </div>
+                    <div class="discount">
+                      <button type="button" class="btn btn-sm btn-success">31% OFF</button></p>
+                    </div>
+                  </div>
+                     <button type="button" class="btn text-success">Upon Demand</button>
+             <!-- </div> -->
+         </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+         <div class="card">
+             <!-- <div class="card-block"> -->
+               <img width="185px" src="https://eg-rv.homzmart.net/catalog/product/r/l/rl-ud-a-044_copy_.jpg" class="card-img-top"alt="">
+                <div class="card-title">
+                  <h6>YL0074 Wall Lamp</h6> 
+                  <h6>Gold&off white-5789</h6>
+                </div>
+                <div class="card-text auto fit content"> <p><i class="bi bi-star-fill text-warning"></i>4.35  (56 Review)</p></div>              
+                   <p>EGP<b class="bold fs-4">599.</b>00 </p>
+                   <div class="details d-flex justify-content-between ">
+                    <div class="deco">
+                        <p class="relate text-decoration-line-through">EGP6,800</p>                  
+                      </div>
+                    <div class="discount">
+                      <button type="button" class="btn btn-sm btn-success">39% OFF</button></p>
+                    </div>
+                  </div>
+                    <button type="button" class="btn text-success">Upon Demand</button>
+             <!-- </div> -->
+         </div>
+      </div>
+
+   </div>
+
+  
+
+
+      </div>
+
+        </div>
+
+        
+
+
+
+
+
+
+ </div>
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
