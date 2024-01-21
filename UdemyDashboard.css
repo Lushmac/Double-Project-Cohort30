@@ -1,0 +1,530 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* a {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: "Poppins", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.mainContentWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.navContents {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+.logoWrapper {
+  width: 8rem;
+  height: auto;
+}
+.logoWrapper img {
+  width: 100%;
+}
+
+.categoryWrapper {
+  width: max-content;
+}
+.categoryWrapper a {
+  white-space: nowrap;
+  /* font-size: 105%; */
+  font-size: 1.2rem;
+  color: rgb(75, 75, 75);
+}
+
+.categoryWrapper a:hover {
+  font-size: 1.2rem;
+  color: rgb(41, 41, 245);
+}
+
+.searchAndIcon {
+  display: flex;
+  flex-grow: 2;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #f7f9fa;
+  padding: 1rem 0.7rem;
+  border-radius: 4.5rem;
+  border: 1px solid black;
+  /* width: 30%; */
+}
+.searchInput {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 0.2rem 0;
+}
+.searchInput:focus {
+  outline: none;
+}
+a .bi {
+  font-size: 2rem;
+  color: black;
+}
+a .bi:hover {
+  font-size: 2rem;
+  color: rgb(41, 41, 245);
+}
+.profileImage {
+  width: 3.5rem;
+  height: auto;
+}
+.profileImage img {
+  width: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.mobileNavContain {
+  display: none;
+}
+.logoContain {
+  width: 5rem;
+  height: auto;
+}
+.logoContain img {
+  width: 100%;
+}
+.iconContain {
+  display: flex;
+  gap: 0.8rem;
+}
+/* Everything about the Nav css ends here */
+
+/* <=========  ================> */
+
+/* Main body content starts here */
+.mainBodywrapper {
+  padding: 0 6.5rem;
+}
+.linkCategory {
+  padding: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  position: relative;
+}
+.listCategory {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.categoryLink {
+  padding: 0.2rem;
+}
+.categoryList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.categoryLink a {
+  font-size: 1.1rem;
+  color: rgb(75, 75, 75);
+  white-space: nowrap;
+}
+.categoryLink a:hover {
+  font-size: 1.1rem;
+  color: rgb(41, 41, 245);
+}
+
+/* <======= carousel slider ======> */
+.carousel {
+  width: 90%;
+  margin: auto;
+  /* position: relative; */
+}
+
+.info-box {
+  position: absolute;
+  /* width: 600px; */
+  width: 40%;
+  height: auto;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  /* opacity: 0; */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.info-box h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+.info-box p,
+a {
+  font-size: 1.4rem;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon,
+.visually-hidden {
+  background-color: #151516;
+  border-radius: 20px;
+}
+.info-hide {
+  padding: 0 2rem;
+  display: none;
+}
+.info-bus {
+  width: 40rem;
+}
+
+/* ======== What Next section starts here ====== */
+
+#whatsNextSection {
+  width: 100%;
+  padding: 3rem 6.5rem;
+}
+.whatsNextSection h1 {
+  font-size: 3.2rem;
+}
+.cardSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.whatCard {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  border: 1px solid rgb(199, 197, 197);
+  width: 100%;
+  padding: 20px;
+  height: fit-content;
+}
+.cardImg {
+  height: auto;
+  width: 40rem;
+  /* width: 40%; */
+}
+.cardImg img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.cardBody {
+  width: 48rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.headText h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 5px 0;
+}
+.cardDescription p {
+  font-size: 1.4rem;
+  margin: 5px 0;
+}
+.cardAuthor p,
+.timeline {
+  color: rgb(124, 124, 124);
+}
+.date {
+  font-weight: 700;
+  color: rgb(49, 99, 49);
+  margin: 5px 0;
+}
+.cardRatings p,
+.cardAuthor p {
+  margin: 0;
+}
+.rate {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.bi-star-fill {
+  color: #b46918;
+}
+.bestseller {
+  padding: 5px 8px;
+  background-color: #eceb98;
+  color: #3d3c0a;
+  font-weight: 700;
+  margin-left: 5px;
+}
+.cardBottom p {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.beforePrice {
+  text-decoration: line-through;
+  color: grey;
+  margin-left: 10px;
+}
+
+/* <======= Recommended for You starts here! ======> */
+#recommended {
+  width: 100%;
+  padding: 0 6.5rem;
+  overflow: hidden;
+}
+.cardCarouselGroup {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  gap: 2rem;
+}
+.cardgroup {
+  /* display: block; */
+  display: flex;
+  flex-direction: row;
+  /* gap: 2rem; */
+  width: 100%;
+  /* overflow-y: hidden; */
+  margin-right: 0;
+}
+.recCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: -10px;
+  padding: 5px;
+}
+.recImg {
+  width: 20rem;
+  height: auto;
+}
+.recImg img {
+  width: 100%;
+}
+.recHeadText h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  overflow-y: hidden;
+  margin: 5px 0;
+}
+.recCardBottom p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+/* ======= Topics for you ======== */
+#topicButtons {
+  padding: 2rem 6.5rem;
+  height: auto;
+}
+.buttonRows {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+}
+.btnContain {
+  width: 19%;
+  border: 1px solid rgb(197, 195, 195);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  align-items: center;
+}
+.btnContain a {
+  width: 100%;
+  text-align: center;
+  padding: 1.2rem;
+  color: rgb(24, 23, 23);
+  font-weight: 700;
+}
+.btnContain a:hover {
+  background-color: #f7f9fa;
+  color: rgb(24, 23, 23);
+}
+.btnContain:hover {
+  background-color: #f7f9fa;
+  color: rgb(24, 23, 23);
+}
+
+h2 {
+  font-weight: 700;
+}
+
+/* ======= Media Queries ============== */
+
+@media (max-width: 1423px) {
+  .categoryWrapper a {
+    white-space: nowrap;
+    font-size: 97%;
+    /* font-size: 1.2rem; */
+    color: rgb(75, 75, 75);
+  }
+  .categoryLink a {
+    /* font-size: 1.1rem; */
+    font-size: 90%;
+    color: rgb(75, 75, 75);
+    white-space: nowrap;
+  }
+}
+@media (max-width: 1208px) {
+  #hideMusic {
+    display: none;
+  }
+  #hideBusiness {
+    display: none;
+  }
+}
+@media (max-width: 1137px) {
+  #hideFitness {
+    display: none;
+  }
+  #hideTeach {
+    display: none;
+  }
+  .headText h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 5px 0;
+  }
+  .cardDescription p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  .cardBottom p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  .cardTimeline p {
+    margin: 0;
+  }
+}
+@media (max-width: 1010px) {
+  .carousel {
+    width: 100%;
+    margin: auto;
+    /* position: relative; */
+  }
+  #hideMarket {
+    display: none;
+  }
+  .info-box h1 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  .info-box p,
+  a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 902px) {
+  .hideNotif {
+    display: none;
+  }
+  .hidePersonal {
+    display: none;
+  }
+  #whatsNextSection {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+  #recommended {
+    width: 100%;
+    padding: 0 2rem;
+    overflow: hidden;
+  }
+  #topicButtons {
+    padding: 2rem 2rem;
+    height: auto;
+  }
+}
+@media (max-width: 750px) {
+  .whatCard {
+    flex-direction: column;
+  }
+  #recommended h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.2;
+  }
+  .cardBody,
+  .cardImg {
+    width: 100%;
+  }
+  .info-hide {
+    padding: 0 2rem;
+    display: block;
+  }
+  .info-bus {
+    width: 100%;
+  }
+  .info-box {
+    display: none;
+  }
+  .info-bus h1 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  .info-bus p,
+  a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 750px) {
+  .navContents {
+    display: none;
+  }
+  .mobileNavContain {
+    display: block;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  .linkCategory {
+    display: none;
+  }
+  .btnContain {
+    border: 2px solid rgb(47, 46, 46);
+    border-radius: 50px;
+    align-items: center;
+    width: fit-content;
+    padding: 8px;
+  }
+  .btnContain a {
+    padding: 5px;
+    border-radius: 50px;
+  }
+  #topicButtons {
+    padding: 2rem 2rem;
+    height: auto;
+    overflow: hidden;
+  }
+  .top {
+    /* white-space: nowrap; */
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    overflow-x: auto;
+  }
+}
