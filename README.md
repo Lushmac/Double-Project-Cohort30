@@ -1,5 +1,4 @@
-# Homzmart-cohort30
 
-# DESIGNED THE FURNITURE SECTION PAGE OF HOMZMART WITH HTML, CSS & BOOTSTRAP
-
-# LINKED SUB-PAGES; BEDS, CHAIRS, ROOMSET, SOFAS, TABLE & TVSETS
+# I used bootstrap 5, html and css to create this project
+#  The Wall lamp html was created using all above.
+# I modified my README.md toreflect what i have done
