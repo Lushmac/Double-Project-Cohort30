@@ -1,0 +1,69 @@
+.card{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.price p{
+    display: inline;
+}
+
+.head p{
+
+    width: 8rem;
+}
+
+
+
+.vat{
+    margin-top: -15px;
+}
+
+.carousel-item {
+    overflow: hidden;
+}
+
+.carousel-item img{
+    transition: all 1.5s ease;
+}
+
+.carousel-item:hover img{
+  transform: scale(1.5);
+}
+
+.symbol p{
+
+    background-color: deeppink;
+    color: white;
+    width: 70px;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 20px;
+    
+}
+
+.explore{
+
+    border-top: 1px solid lightgray;
+    width: 40rem;
+    border-bottom: 1px solid lightgray;
+    
+}
+
+.steel{
+
+    font-size: 16px;
+    
+}
+
+.off p{
+    background-color:limegreen;
+    padding: 5px;
+    color: black;
+}
+
+.off{
+
+    margin-top: 25px;
+}
+
