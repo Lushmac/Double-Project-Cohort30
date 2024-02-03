@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- saved from url=(0228)https://fledge.eu.criteo.com/interest-group?data=ycnoCnw0TEdyUnlTMm5ZYmk1ZUcwaGFRang5NFV4T3BrRjVOTitBTkZMa0puOHFZaGRxcm54dXgxMXdmQWlsUDhienhTM3h2VkVSS2VpTWRPajhMMG5VZ2ljelNQMG5FMmMvZzFqR0xSeUVPL3VJL21VRlRySU1pcmNCeEV2OTI2L1BOcXw -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <!-- Chrome origin trial token -->
+    <meta http-equiv="origin-trial" content="AnolOEEMEnMaCvmUcw/eijaA/Ntx4pke43TW8O1+XFxTL7yMSzmBnkPrjQ33sKmqvREEpLQOE72gUMzHLu9KiAoAAABseyJvcmlnaW4iOiJodHRwczovL2NyaXRlby5jb206NDQzIiwiZmVhdHVyZSI6IlByaXZhY3lTYW5kYm94QWRzQVBJcyIsImV4cGlyeSI6MTY5NTE2Nzk5OSwiaXNTdWJkb21haW4iOnRydWV9">
+</head>
+<body>
+
+<script>
+    if (!navigator.joinAdInterestGroup) {
+        console.log("No fledge for you!");
+    } else {
+        var igs = [{"owner":"https://fledge.eu.criteo.com","name":"2ZaYvXxRNS90Y3Qza1BMQ0ZWdEV0Q2crcWpBPT18","priorityVector":{"browserSignals.ageInMinutes":-1,"browserSignals.one":43200},"biddingLogicURL":"https://fledge.eu.criteo.com/simplebid?platform=eu","biddingWasmHelperURL":"https://fledge.eu.criteo.com/criteo.wasm","trustedBiddingSignalsURL":"https://fledge.eu.criteo.com/getvalues","trustedBiddingSignalsKeys":["NNrpbXw0TEdyUnlTMm5ZYmk1ZUcwaGFRanh4b3NjOUcyRVI4eThocXR1Y0djMDF4Z1Z5bWlzTjdsWDhzVDNqR1lQR0dMRzBYNHRONW8ycVVTaVVVRjVSZ1FVdmNIRENja09Kd1NkZCtjWUZRR0xTbzdnTCtMNVF4K0xrY2RuZnl6UjJ6dXw"],"userBiddingSignals":{},"updateURL":"https://fledge.eu.criteo.com/interest-group/update?key=cjE57Xw0TEdyUnlTMm5ZYmk1ZUcwaGFRanh6S2dndjZRYW5RalJWN29vcCtmOTY0WnRoTGFEbXd3cUsxa0ZrUGZyeTA2UEx4STBMczBzNEpuWGFBeXE1Njg2Zz09fA","ads":[{"renderURL":"https://fledge.eu.criteo.com/delivery/fledge?pltd=False&campaignId=346955&adId=1365143&width=${AD_WIDTH}&height=${AD_HEIGHT}","metadata":{"AvailableSizes":null,"InBannerVideo":0,"AdType":0,"IsSizeless":true}},{"renderURL":"https://fledge.eu.criteo.com/delivery/fledge?pltd=False&campaignId=327105&adId=1195955&width=${AD_WIDTH}&height=${AD_HEIGHT}","metadata":{"AvailableSizes":null,"InBannerVideo":0,"AdType":0,"IsSizeless":true}},{"renderURL":"https://fledge.eu.criteo.com/delivery/fledge?pltd=False&campaignId=367660&adId=1416602&width=${AD_WIDTH}&height=${AD_HEIGHT}","metadata":{"AvailableSizes":null,"InBannerVideo":0,"AdType":0,"IsSizeless":true}}],"adComponents":[],"executionMode":"group-by-origin"}];
+        var expiration = 2592000;
+        for (const ig of igs) {
+            navigator.joinAdInterestGroup(ig, expiration);
+        }
+    }
+
+    async function measureAudienceSize() {
+        // Measuring audience size
+        // Register worklet
+        if((!window?.sharedStorage?.worklet?.addModule) || (!window?.sharedStorage?.run)){
+            return;
+        }
+        await window.sharedStorage.worklet.addModule('');
+
+        // Run audience size measurement operation
+        await window.sharedStorage.run('audience-size-measurement', {
+            data: { bucketKey: BigInt('2852324'), contributionValue: 8192}
+        });
+    }
+
+    //TODO reactivate audience-size-measurement
+    //measureAudienceSize();
+
+</script>
+
+
+</body></html>
