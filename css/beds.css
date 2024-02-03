@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.navbar-light {
+    font-weight: 600;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.beds-img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.beds-menu-heading {
+    font-weight: 600;
+}
+
+.beds-menu-heading a {
+    text-decoration: none;
+    color: black;
+}
+
+.beds-menu-heading .bx-arrow-back {
+    color: black;
+    font-weight: bolder;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+
+.beds-menu-img {
+    width: 80px;
+    border: 1px solid rgb(241, 242, 243);
+    border-radius: 30% 20%;
+    margin: 10px 3px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul li a {
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(18, 11, 83);
+}
+
+.card-body h5 {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card-body h5 a {
+    text-decoration: none;
+    color: black;
+}
+
+.bx,
+span {
+    color: gold;
+}
+
+.btn-success {
+    font-size: 11px;
+    font-weight: bold;
+    height: 30px;
+    margin-left: 40px;
+    border-radius: 0;
+    color: black;
+}
+
+.strike {
+    margin-left: 20px;
+    text-decoration: line-through;
+}
+
+.demand {
+    margin-left: 16px;
+    color: rgb(94, 133, 35);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn-light {
+    color: rgb(84, 25, 139);
+    width: 150px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+span>.bx,
+.black {
+    color: black;
+    font-weight: bolder;
+    border-radius: 50%;
+}
